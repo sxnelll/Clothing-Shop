@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeans - Clothing Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Same internal CSS as Palazzo Pants */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            padding: 1em;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        .product-details {
+            flex: 1;
+            min-width: 300px;
+            padding: 1em;
+        }
+
+        .product-details h1 {
+            margin-top: 0;
+        }
+
+        .ratings {
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 1.2em;
+        }
+
+        .ratings span {
+            margin-right: 15px;
+            display: inline-block;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 1.6em;
+            margin-top: 1em;
+            color: #222;
+        }
+
+        .sizes {
+            margin-top: 1em;
+        }
+
+        .sizes label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        .sizes .size-option {
+            display: inline-block;
+            padding: 0.5em 1em;
+            margin-right: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+
+        .buttons {
+            margin-top: 1.5em;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin-right: 1em;
+            padding: 0.7em 1.5em;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .buttons a:hover {
+            background-color: #218838;
+        }
+
+        .back-button {
+            display: block;
+            margin: 2em auto;
+            width: fit-content;
+            padding: 0.7em 1.5em;
+            background-color: #777;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        .review-section {
+            max-width: 800px;
+            margin: 3em auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .review-section h2 {
+            margin-bottom: 1em;
+        }
+
+        .review {
+            margin-bottom: 1.5em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1em;
+        }
+
+        .review .user {
+            font-weight: bold;
+        }
+
+        .review .stars {
+            color: #ffc107;
+        }
+
+        .review p {
+            margin: 0.5em 0 0 0;
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .buttons a {
+                display: block;
+                margin: 0.5em auto;
+            }
+
+            .sizes .size-option {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Clothing Shop</h1>
+</header>
+
+<main class="product-container">
+    <div class="product-image">
+        <img src="jeans.jpg" alt="Jeans">
+    </div>
+    <div class="product-details">
+        <h1>Jeans</h1>
+        <div class="ratings">
+            <span><span class="stars">★★★★★</span> 5.0</span>
+            <span>120 Ratings</span>
+            <span>90+ Sold</span>
+        </div>
+        <p>Classic denim jeans that combine comfort with timeless style. Perfect for everyday wear.</p>
+        <div class="price">₱999.00</div>
+
+        <div class="sizes">
+            <label>Select Size:</label>
+            <span class="size-option">Small</span>
+            <span class="size-option">Medium</span>
+            <span class="size-option">Large</span>
+        </div>
+
+        <div class="buttons">
+            <a href="cart.html">Add to Cart</a>
+            <a href="checkout.html">Buy Now</a>
+        </div>
+    </div>
+</main>
+
+<a href="index.html" class="back-button">← Back to Home</a>
+
+<section class="review-section">
+    <h2>Customer Reviews</h2>
+
+    <div class="review">
+        <div class="user">Mika Reyes</div>
+        <div class="stars">★★★★★</div>
+        <p>Perfect fit! Super durable and looks great with anything.</p>
+    </div>
+
+    <div class="review">
+        <div class="user">Jasmine Tan</div>
+        <div class="stars">★★★★★</div>
+        <p>I wear them almost every day. Highly recommended!</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Clothing Shop</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Shop - Products</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1em 0 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 40px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-section {
+            margin-bottom: 3em;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin: 0.5em 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #4cae4c;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            margin-top: 40px;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clothing Shop - Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="#mens">Mens</a></li>
+                <li><a href="#womens">Womens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main> 
+            <h2>Mens Clothing</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="classic.jpg" alt="Classic Shirt">
+                    <h3>Classic Shirt</h3>
+                    <p>₱399.00</p>
+                    <a href="classic-shirt.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="pants.jpg" alt="Casual Pants">
+                    <h3>Casual Pants</h3>
+                    <p>₱449.00</p>
+                    <a href="casual-pants.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="winterjacket.jpg" alt="Winter Jacket">
+                    <h3>Winter Jacket</h3>
+                    <p>₱599.00</p>
+                    <a href="winter-jacket.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="polo.jpg" alt="Polo Shirt">
+                    <h3>Polo Shirt</h3>
+                    <p>₱799.00</p>
+                    <a href="polo.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="bj.jpg" alt="Baggy Jeans">
+                    <h3>Baggy Jeans</h3>
+                    <p>₱999.00</p>
+                    <a href="baggy-jeans.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="hoodie.jpg" alt="Hoodie">
+                    <h3>Hoodie</h3>
+                    <p>₱499.00</p>
+                    <a href="hoodie.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="shorts.jpg" alt="Casual Shorts">
+                    <h3>Casual Shorts</h3>
+                    <p>₱399.00</p>
+                    <a href="casual-short.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="samba.jpg" alt="Adidas Samba Sneaker">
+                    <h3>Adidas Samba Sneaker</h3>
+                    <p>₱5,999.00</p>
+                    <a href="adidas-samba.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="loafers.jpg" alt="Phineas Loafers">
+                    <h3>Phineas Loafers</h3>
+                    <p>₱3,999.00</p>
+                    <a href="phineas-loafers.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="long.jpg" alt="Long Sleeve T-Shirt">
+                    <h3>Long Sleeve T-Shirt</h3>
+                    <p>₱999.00</p>
+                    <a href="long-sleeve-tshirt.html" class="button">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="womens" class="product-section">
+            <h2>Womens Clothing</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="dress.jpg" alt="Summer Dress">
+                    <h3>Summer Dress</h3>
+                    <p>₱999.00</p>
+                    <a href="summer-dress.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="skirt.jpg" alt="Elegant Skirt">
+                    <h3>Elegant Skirt</h3>
+                    <p>₱599.00</p>
+                    <a href="elegant-skirt.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="top.jpg" alt="Stylish Top">
+                    <h3>Stylish Top</h3>
+                    <p>₱399.00</p>
+                    <a href="stylish-top.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="cardigan.jpg" alt="Cardigan">
+                    <h3>Cardigan</h3>
+                    <p>₱699.00</p>
+                    <a href="cardigan.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="palazzo.jpg" alt="Palazzo Pants">
+                    <h3>Palazzo Pants</h3>
+                    <p>₱899.00</p>
+                    <a href="palazzo.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="jeans.jpg" alt="Jeans">
+                    <h3>Jeans</h3>
+                    <p>₱999.00</p>
+                    <a href="jeans.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="off.jpg" alt="Off Shoulder Top">
+                    <h3>Off Shoulder Top</h3>
+                    <p>₱899.00</p>
+                    <a href="off-shoulder-top.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="mini.jpg" alt="Long Sleeve Mini Dress">
+                    <h3>Long Sleeve Mini Dress</h3>
+                    <p>₱1,299.00</p>
+                    <a href="long-sleeve-mini-dress.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="suit.jpg" alt="Jersey Body Suit">
+                    <h3>Jersey Body Suit</h3>
+                    <p>₱499.00</p>
+                    <a href="jersey-bodysuit.html" class="button">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="waist.jpg" alt="Waist Shorts">
+                    <h3>Waist Shorts</h3>
+                    <p>₱299.00</p>
+                    <a href="waist-shorts.html" class="button">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Clothing Shop</p>
+    </footer>
+</body>
+</html>
